@@ -1,0 +1,259 @@
+
+body{
+    margin: 0
+}
+header{
+    background: #F8F9FA;
+  width:100%;
+ 
+    height:60px;
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+flex-flow: row nowrap;
+color:#636363;
+
+position: sticky;
+top:0;
+z-index:99;
+
+}
+.top-nav{
+    display: flex;
+    align-items: center;
+    width:40%;
+   
+    justify-content: center;
+    font-family: arial;
+    font-weight:bold;
+    font-size:14px;
+    
+}
+.link{
+    text-decoration: none;
+    color:inherit;
+    margin: 0 25px;
+}
+.logo{
+    display: inline;
+}
+.active{color:#A0D372}
+
+footer{
+    display: flex;
+justify-content: space-between;
+padding: 0 10%;
+width:80%;
+height:50px;
+position: fixed;
+bottom:0;
+background: black;
+color:#787878;
+font-size:14px;
+font-weight:100;
+font-family: arial;
+align-items: center;
+
+}
+.footer-menu{
+    list-style: none;
+    display: flex;
+}
+.social-media{ color:#787878; padding:5px;  }
+.to-top{
+   position: absolute;
+   right : 20px;
+}
+
+main{
+  
+    width:100%;
+    height:100vh;
+}
+
+.banner{
+    background: #202526;
+    height:50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center
+  
+}
+.text-center{
+    text-align:center;
+    color:white; 
+    border:1px solid;
+    border-color: linear-gradient(to top left, rgb(89, 146, 232), blue  );
+    width:50%;
+ 
+  font-family: arial;
+    padding: 2% 2% 2% 4%;
+}
+.banner-name{
+color:#03B4CA;
+display: inline-block;
+text-transform:uppercase;
+
+}
+.quote{
+font-size:26px;
+font-weight:100;
+line-height: 40px;
+margin:5px;
+
+
+}
+.newsletter{
+    background-color:rgb(226, 225, 225);
+    margin: 0 5%;
+    height:40vh;
+    width:90%;
+    text-align:center;
+  
+}
+.newsletter>form{
+    width:30%;
+    margin:auto ;
+    font-family:arial;
+    padding:30px;
+    line-height:2em;
+ 
+}
+.newsletter>form>p{
+color:gray;
+font-size: 14px;
+line-height: 1.5em;
+}
+.mail{
+    width:75%;
+   border:0;
+   height:25px;
+    border-radius: 50px;
+   padding: 5px 20px;
+}
+.mail:focus{
+    outline-width:0;
+}
+.send{
+    border:0;
+    border-radius:50%;
+    color:white;
+    background: #A0D372;
+    width:27px;
+    height:27px;
+    margin-left:-10px;
+
+}
+.register{
+width:100%;
+height:100vh;
+
+display: flex;;
+}
+.grid{
+    width:50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size:12px;
+}
+.register{
+font-family:arial;
+
+}
+
+.register-form{
+display:flex;
+width:60%;
+height:70%;
+justify-content: space-around;
+flex-direction: column;
+
+
+}
+
+.input{
+height:30px;
+width:100%;
+font-family: FontAwesome;
+font-style: normal;
+font-weight: normal;
+text-decoration: inherit;
+padding:5px;
+border:1px solid rgb(204, 202, 202);
+
+
+}
+
+.register-form h3{
+    font-size:18px
+}
+.submit{
+
+    background: #72C02C;
+width:100%;
+    height:30px;
+    border:none;
+    border-radius:5px;
+    color:white;
+    text-transform:uppercase;
+
+}
+.form-foot{
+  display: flex;
+  font-family: arial;
+  align-items: center;
+ justify-content: space-between;  
+ flex-direction: row;
+}
+
+.login-form{
+    width:60%;
+    height:70%;
+}
+.login-form input{
+    margin:10px 0;
+}
+.cercle{
+    border:1px solid rgb(179, 172, 172);
+    border-radius:50%;
+    display:flex;
+    width:40px;
+    height:40px;
+   align-items: center;
+   justify-content: center;
+   color:rgb(169, 162, 162);
+   margin: -30px auto auto auto;
+background: white;
+}
+hr{
+    width:30%;
+    color:rgb(206, 201, 201);
+
+}
+.line{
+    margin: 40px auto;
+}
+.btn-log{
+    width:170px;
+    height:40px;
+ margin: 0 5px 20px 0;
+ border-radius: 5px;
+ font-family: arial;
+ font-size:14px;
+background: white;
+
+}
+.fb{
+    border:1px solid rgb(14, 70, 155);
+    color:rgb(14, 70, 155);
+
+}
+.twit{
+    border: 1px solid rgb(31, 148, 211);
+    color:rgb(31, 148, 211);
+}
+.btn-group{
+    text-align: center;
+}

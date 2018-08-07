@@ -1,0 +1,175 @@
+
+<html>
+  
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        
+</head>
+<body>
+    <body>
+        <header>
+<div class="top-nav">
+    <h3 class="logo">ESPACE MEMBRE</h3>
+    <a href="#home" class="link active">ACCUEIL</a>
+</div>
+<nav class="top-nav">
+    <a href="#register" class="link">s'inscrire</a>
+    <a href="#login" class="link">se connecter</a>
+</nav>
+
+        </header>
+
+
+        <main>
+<div  id="home">
+    <div class="banner">
+        
+<div class="text-center">
+<b class="banner-name">horchani wissem</b>
+<h3 class="quote"> <i>"</i>  Bienvenue, vous étes maintenant connecté dans notre espace membre. <i>"</i>  </h3>
+
+</div>
+
+    </div>
+
+<div class="newsletter">
+<form action="">
+<h2>Newsletter</h2>
+<p>
+    Abonner-vous à notre newsletter pour nouvelles promotions et offres.
+</p>
+<input type="text" placeholder="Enter Email" class="mail"><button class="send"><i class="fa fa-paper-plane"></i></button>
+</form>
+</div>
+
+
+</div>
+<!--  register -->
+
+<div class="register" id="register">
+
+
+<div class="grid">
+<img width="95%" height="95%" src="https://www.escardio.org/static_file/Escardio/Medias/common-library/landing%20pages/partnerships_esc-HLcolmd8.png?mts=1468913958201.png" >
+
+</div>
+<div class="grid">
+
+<form action=""  class="register-form" id="register-form">
+        <h3>inscrez-vous</h3>
+    <input type="text"  placeholder="&#xf040 Nom complet " class="input register-input">
+    <input type="text" placeholder="&#xf0c0 Pseudo"  class="input register-input">
+    <input type="email" placeholder="&#xf0e0 Email" id="email"  class="input register-input">
+    <input type="password" placeholder="&#xf13e Mot de passe" id="pass"  class="input register-input">
+    <input type="password" placeholder="&#xf13e Confimer votre mot de passe" id="pass2"  class="input register-input">
+  <div> <input  type="checkbox" id="check"> <label for="check"> j'accepte les <a href="#">termes et conditions </a>  </label></div> 
+    <input type="submit" value="s'inscrire" id="submit" class="submit"/>
+</form>
+<p> vous avez déja un compte ? <a href="#">Connectez vouz</a>  </p>
+</div>
+
+</div>
+
+        <!--  login  -->
+
+        <div class="register" id="login">
+
+
+            <div class="grid">
+            <img width="95%" height="95%" src="http://www.kinyu-z.net/data/wallpapers/226/1495374.jpg" >
+            
+            </div>
+            <div class="grid">
+            
+            <form action="" class="login-form">
+                    <h3>connectez vous</h3>
+                <input type="text"  placeholder="&#xf040 Nom complet " class="input">
+                <input type="text" placeholder="&#xf0c0 Pseudo"  class="input">
+                <div class="form-foot">
+               <div > <input type="radio" name="" id="save"> <label for="save">restez connecté</label></div>
+               <a href="#">mot de passe oublié ?</a>
+                </div>
+                
+                <input type="submit" value="se connecter" class="submit"/>
+
+                <div class="line">
+                    <hr>
+                    <div class="cercle">OU</div>
+                    </div>
+                <div class="btn-group" >
+                    <button class="btn-log fb"> <i class="fa fa-facebook"></i> facebook</button><button class="btn-log twit"> <i class="fa fa-twitter"></i> twitter</button>
+                        <p>vous n'avez pas de compte ? <a href="#">inscrez-vous</a></p>
+                        </div>
+                </form>
+       
+            </div>
+            
+            </div>
+
+
+        </main>
+
+
+        <footer>
+<p>2018 &copy tous les droits sont réservé. &nbsp; &nbsp;   site créé par jamel nafaa </p> 
+<ul class="footer-menu">
+    <li class="social-media"> <i class="fa fa-facebook"></i> </li>
+    
+    <li class="social-media"><i class="fa fa-skype"></i></li>
+    <li class="social-media"> <i class="fa fa-twitter"></i> </li>
+    <li class="social-media"><i class="fa fa-pinterest"></i></li>
+    <li class="social-media"><i class="fa fa-dribbble"></i></li>
+    <li class="social-media"><i class="fa fa-linkedin"></i></li>
+</ul>
+<div class="to-top"> <  </div>
+        </footer>
+<script>
+
+    $(document).ready(function(){
+
+$("#register").hide()
+
+$("#login").hide()
+
+$(".link").click(function(){
+
+switch($(this).attr("href")){
+
+case "#home":
+
+$("#home").fadeIn("slow")
+
+$("#register,#login").fadeOut()
+
+break;
+
+case "#register":
+$("#register").fadeIn("slow")
+$("#home,#login").fadeOut()
+
+break;
+
+case "#login":
+$("#login").fadeIn("slow")
+$("#register,#home").fadeOut()
+
+break;
+
+
+}
+
+})
+
+    });
+
+
+</script>
+<script src="script.js"></script>
+    </body>
+    
+</body>
+
+</html>
